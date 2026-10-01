@@ -1,0 +1,572 @@
+You are assisting with creation and maintenance of the central evidence library for a SafeScribe pharmacist-facing clinical pathway.
+
+Pathway name: Cold sores (oral herpes labialis)
+Medical condition: Cold sores (oral herpes labialis)
+Province / jurisdiction: AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT
+
+Audience:
+Canadian community pharmacists using SafeScribe clinical pathways.
+
+# PURPOSE
+
+Generate a concise, authoritative, deduplicated reference library for this SafeScribe clinical pathway.
+
+The references may support:
+
+- Presentation Review
+- Differential Review
+- Red Flags & Safety Screening
+- Treatment Options
+- Patient Guidance
+- Adapt and other medication-management workflows when the reference contains clinically relevant information such as dosing, renal adjustment, interactions, formulation, therapeutic substitution, monitoring, or counselling.
+
+SafeScribe uses approved references to:
+
+- support question-level and item-level `Why?` explanations;
+- support section-level `Evidence & review`;
+- support treatment rationale;
+- support Adapt clinical checks;
+- support medication-specific rationale;
+- support clinical governance and review;
+- support documentation reference selection.
+
+This task is for:
+
+1. evidence discovery;
+2. structured bibliographic drafting;
+3. pathway-section mapping;
+4. automatic clinical-use tagging;
+5. documentation-reference candidate identification.
+
+All generated mappings and tags are suggestions and will undergo SafeScribe clinical review before publication.
+
+Do NOT create:
+
+- reviewer names;
+- internal review records;
+- external peer-review records;
+- approval decisions;
+- pathway versions;
+- patient-specific documentation;
+- patient-specific treatment recommendations.
+
+---
+
+# SOURCE PRIORITY
+
+Prefer authoritative Canadian sources whenever appropriate.
+
+Use this preference order:
+
+1. CPS / Canadian Pharmacists Association
+2. Health Canada guidance
+3. current Canadian product monographs
+4. applicable provincial pharmacist protocols or regulator guidance
+5. Canadian specialty-society clinical guidelines
+6. Canadian public-health guidance
+7. high-quality international specialty guidelines only when suitable Canadian evidence is unavailable
+8. systematic reviews or authoritative evidence summaries when useful
+
+Avoid weak secondary sources when a stronger primary or authoritative guideline source is available.
+
+Do not add sources merely to increase the number of references.
+
+---
+
+# REFERENCE SELECTION RULES
+
+Include only references that materially support one or more SafeScribe clinical functions.
+
+Prefer approximately 5–12 high-value references for a typical pathway.
+
+Use fewer if sufficient.
+
+A single reference may support:
+
+- multiple pathway sections;
+- multiple clinical-use tags;
+- Prescribe;
+- Adapt;
+- documentation;
+- counselling;
+- safety checks.
+
+Do NOT duplicate a reference simply because it supports multiple functions.
+
+For medication-treatment pathways:
+
+- include current Canadian product monographs when they materially support dose, duration, contraindications, renal/hepatic adjustment, route/formulation, interactions, monitoring, or important safety information;
+- include pathway-level clinical guidance where it supports treatment selection or place in therapy;
+- do not include every available product monograph unless it materially contributes to the pathway.
+
+For Red Flags:
+
+- include references supporting actual referral criteria, contraindications, urgent assessment triggers, or clinically important exclusions.
+
+For Differential Review:
+
+- include references supporting relevant alternative diagnoses and distinguishing clinical features.
+
+For Patient Guidance:
+
+- include references supporting expected course, self-care, transmission/prevention, follow-up, counselling, or when to seek care.
+
+---
+
+# CRITICAL ACCURACY RULES
+
+DO NOT invent or guess:
+
+- source titles
+- authors
+- organizations
+- publisher names
+- publication years
+- editions
+- URLs
+- DOIs
+- document identifiers
+- guideline versions
+
+If you are not confident a bibliographic detail is exact:
+
+- leave the field blank when possible;
+- set `Verification required: true`.
+
+Do not fabricate a URL simply to make a citation appear complete.
+
+If you are not confident a source exists exactly as named, omit it.
+
+Do not label a source as Canadian if it is not Canadian.
+
+Do not label a source as current unless you are reasonably confident it is current.
+
+Prefer the official publisher or regulator URL.
+
+All references will undergo SafeScribe clinical review before publication.
+
+---
+
+# DOCUMENT TYPE VALUES
+
+Use ONLY one of these values:
+
+- Clinical reference
+- Guideline
+- Product monograph
+- Regulatory guidance
+- Specialty guideline
+- Public-health guidance
+- Systematic review
+- Other
+
+---
+
+# JURISDICTION VALUES
+
+Use ONLY one of these values:
+
+- Canada
+- Alberta
+- British Columbia
+- Ontario
+- Other Canadian province/territory
+- International
+
+Choose the jurisdiction of the reference itself, not the jurisdiction of the pathway.
+
+Example:
+
+A Health Canada product monograph:
+`Jurisdiction: Canada`
+
+An Alberta College of Pharmacy document:
+`Jurisdiction: Alberta`
+
+An international specialty guideline:
+`Jurisdiction: International`
+
+---
+
+# APPLICABLE CONDITION / PATHWAY
+
+Each reference must be linked to the pathway or condition it supports.
+
+For this task, use:
+
+`Cold sores (oral herpes labialis)`
+
+as the applicable pathway unless another pathway is explicitly supplied in this prompt.
+
+Do NOT invent additional SafeScribe pathway names.
+
+If a source is broadly applicable but still being imported specifically for this pathway, retain the current pathway as the applicable pathway.
+
+---
+
+# PATHWAY SECTION NAMES
+
+Use ONLY these section names:
+
+- Presentation Review
+- Differential Review
+- Red Flags
+- Treatment Options
+- Patient Guidance
+- Section-wide
+
+Do not create additional section names.
+
+---
+
+# PATHWAY SECTION MAPPING RULES
+
+For each reference, automatically identify which pathway section(s) it materially supports.
+
+Examples:
+
+`Suggested pathway sections: Presentation Review, Differential Review`
+
+or:
+
+`Suggested pathway sections: Treatment Options, Red Flags`
+
+or:
+
+`Suggested pathway sections: Section-wide`
+
+Do not map a reference to a section merely because the topic is mentioned incidentally.
+
+Do not identify exact question IDs, treatment IDs, red-flag IDs, or guidance-item IDs unless those IDs are explicitly supplied.
+
+Detailed item-level mapping will occur later in SafeScribe.
+
+---
+
+# CLINICAL USE TAGS
+
+For each reference, automatically assign all clinically relevant SafeScribe clinical-use tags.
+
+These tags allow the same approved evidence to be reused in:
+
+- Adapt;
+- Prescribe;
+- Renew;
+- Clinical & Safety Check;
+- rationale generation;
+- monitoring;
+- counselling;
+- documentation.
+
+Use ONLY these controlled tags:
+
+- Assessment
+- Differential diagnosis
+- Red flags / referral
+- Treatment / place in therapy
+- Dose
+- Age / weight
+- Renal
+- Hepatic
+- Pregnancy / lactation
+- Contraindications / precautions
+- Allergies / hypersensitivity
+- Drug interactions
+- Dosage form / formulation
+- Route / administration
+- Regimen / frequency
+- Therapeutic substitution
+- Adherence / use
+- Monitoring / follow-up
+- Counselling / patient guidance
+
+Do NOT create additional tag names.
+
+---
+
+# CLINICAL TAGGING RULES
+
+Assign a clinical-use tag only when the source materially supports that topic.
+
+Do not assign a tag simply because the topic appears somewhere in the document.
+
+Examples:
+
+A Canadian product monograph may reasonably receive:
+
+`Dose, Renal, Hepatic, Pregnancy / lactation, Contraindications / precautions, Drug interactions, Dosage form / formulation, Route / administration, Monitoring / follow-up`
+
+A condition-specific clinical guideline may receive:
+
+`Assessment, Differential diagnosis, Red flags / referral, Treatment / place in therapy, Dose, Monitoring / follow-up, Counselling / patient guidance`
+
+A public-health information source may receive:
+
+`Red flags / referral, Counselling / patient guidance`
+
+A source supporting switching between therapeutically appropriate agents may receive:
+
+`Treatment / place in therapy, Therapeutic substitution`
+
+Do not automatically give every treatment source:
+
+- Dose
+- Renal
+- Drug interactions
+- Therapeutic substitution
+
+unless the source actually supports those topics.
+
+---
+
+# ADAPT-SPECIFIC TAGGING
+
+Pay particular attention to whether a reference could support Adapt.
+
+For example:
+
+## Dose adaptation
+Consider tags such as:
+
+- Dose
+- Age / weight
+- Renal
+- Hepatic
+- Drug interactions
+- Monitoring / follow-up
+
+## Dosage form / formulation adaptation
+Consider:
+
+- Dosage form / formulation
+- Route / administration
+- Adherence / use
+- Counselling / patient guidance
+
+## Regimen / frequency adaptation
+Consider:
+
+- Regimen / frequency
+- Dose
+- Adherence / use
+- Monitoring / follow-up
+
+## Route adaptation
+Consider:
+
+- Route / administration
+- Dosage form / formulation
+- Contraindications / precautions
+
+## Therapeutic substitution
+Consider:
+
+- Therapeutic substitution
+- Treatment / place in therapy
+- Contraindications / precautions
+- Allergies / hypersensitivity
+- Drug interactions
+- Monitoring / follow-up
+
+Only add these tags if the source actually contains meaningful evidence supporting them.
+
+---
+
+# DOCUMENTATION REFERENCE CANDIDATE
+
+For each source indicate whether it could reasonably serve as the pathway's concise primary documentation reference.
+
+Use:
+
+`Documentation reference candidate: YES | NO`
+
+A good documentation-reference candidate should generally be:
+
+- authoritative;
+- concise to identify in a pharmacist record;
+- directly relevant to the pathway;
+- preferably Canadian;
+- broad enough to support the primary assessment/treatment decision.
+
+Do not select SafeScribe itself.
+
+Do not mark many sources as YES.
+
+Typically only 1–3 references should be strong candidates.
+
+SafeScribe administrators will make the final selection.
+
+---
+
+# VERIFICATION REQUIRED
+
+Use:
+
+`Verification required: true | false`
+
+Set:
+
+`Verification required: true`
+
+if any important bibliographic information needs manual confirmation.
+
+Examples:
+
+- exact title uncertain;
+- publication year uncertain;
+- current edition uncertain;
+- official URL uncertain;
+- DOI uncertain;
+- source appears valid but current status is uncertain.
+
+Set:
+
+`Verification required: false`
+
+only when you are reasonably confident the bibliographic information is correct.
+
+---
+
+# STATUS
+
+All newly imported AI-generated reference records must use:
+
+`Status: Needs review`
+
+Do not assign:
+
+- Approved
+- Published
+- Rejected
+
+AI does not make governance decisions.
+
+---
+
+# NOTES
+
+Add a short note only when useful.
+
+Examples:
+
+- why this source is particularly relevant;
+- whether it is primarily useful for dose, safety, counselling, etc.;
+- whether an edition/version should be confirmed;
+- whether the source is supplemental rather than primary.
+
+Do not repeat information already captured in the structured fields.
+
+If no useful note is needed, leave blank.
+
+---
+
+# REQUIRED OUTPUT FORMAT
+
+Return ONLY markdown.
+
+Use exactly this structure:
+
+## Reference Library
+
+### R1
+
+- Title: [exact title]
+- Organization / publisher: [exact organization]
+- Document type: Clinical reference | Guideline | Product monograph | Regulatory guidance | Specialty guideline | Public-health guidance | Systematic review | Other
+- Year / edition: [exact year or edition if confidently known; otherwise blank]
+- Jurisdiction: Canada | Alberta | British Columbia | Ontario | Other Canadian province/territory | International
+- URL: [exact official URL only if confidently known; otherwise blank]
+- DOI: [exact DOI only if applicable and confidently known; otherwise blank]
+- Applicable condition(s) / pathway(s): Cold sores (oral herpes labialis)
+- Suggested pathway sections: [comma-separated allowed pathway-section names]
+- Clinical use tags: [comma-separated controlled clinical-use tags]
+- Documentation reference candidate: YES | NO
+- Verification required: true | false
+- Status: Needs review
+- Notes: [short note if useful; otherwise blank]
+
+### R2
+
+- Title: [...]
+- Organization / publisher: [...]
+- Document type: [...]
+- Year / edition: [...]
+- Jurisdiction: [...]
+- URL: [...]
+- DOI: [...]
+- Applicable condition(s) / pathway(s): Cold sores (oral herpes labialis)
+- Suggested pathway sections: [...]
+- Clinical use tags: [...]
+- Documentation reference candidate: YES | NO
+- Verification required: true | false
+- Status: Needs review
+- Notes: [...]
+
+[Continue as needed]
+
+---
+
+# EXAMPLE OF CORRECT TAGGING
+
+Example only — do not reuse unless supported by the actual reference:
+
+### R1
+
+- Title: Example Canadian Clinical Guideline
+- Organization / publisher: Example Organization
+- Document type: Guideline
+- Year / edition: 2026
+- Jurisdiction: Canada
+- URL:
+- DOI:
+- Applicable condition(s) / pathway(s): Cold sores (oral herpes labialis)
+- Suggested pathway sections: Presentation Review, Treatment Options, Patient Guidance
+- Clinical use tags: Assessment, Treatment / place in therapy, Dose, Monitoring / follow-up, Counselling / patient guidance
+- Documentation reference candidate: YES
+- Verification required: true
+- Status: Needs review
+- Notes: Useful as a pathway-level clinical reference; bibliographic details require verification.
+
+---
+
+# DEDUPLICATION
+
+Before returning results:
+
+1. Compare titles.
+2. Compare organizations.
+3. Compare publication year/edition.
+4. Compare URL/DOI.
+5. Remove duplicate or substantially duplicate versions unless there is a clear clinical reason to retain both.
+
+If an older version and a newer version of the same guideline are identified:
+
+- prefer the current version;
+- omit the older version unless specifically needed.
+
+---
+
+# FINAL CHECK BEFORE RESPONDING
+
+Confirm internally that:
+
+- every reference is materially relevant;
+- duplicate references were removed;
+- Canadian evidence was preferred where appropriate;
+- treatment monographs were included only when clinically useful;
+- exact bibliographic details were not invented;
+- uncertain fields are blank rather than guessed;
+- uncertain references have `Verification required: true`;
+- pathway-section mappings use only the approved section names;
+- clinical-use tags use only the approved controlled vocabulary;
+- clinical-use tags reflect material evidence support;
+- Adapt-relevant tags were added where genuinely supported;
+- no source was over-tagged;
+- no source was duplicated simply because it supports multiple modules;
+- Applicable condition(s) / pathway(s) is populated;
+- Status is always `Needs review`;
+- Documentation reference candidate is YES only for strong candidates;
+- URLs and DOIs are exact or blank;
+- no reviewer names or approval decisions were generated.
+
+Return ONLY the requested markdown.
